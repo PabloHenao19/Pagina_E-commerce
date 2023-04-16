@@ -1,0 +1,335 @@
+
+
+body{
+    background-color: rgb(187, 181, 181);
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+    overflow-y: scroll;
+    
+}
+
+.header{
+    background-color: brown;
+    height: 110px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    justify-content: space-evenly;
+
+
+}
+
+
+.nav{
+    position: sticky;
+     display: flex;
+     justify-content: space-between;
+     margin: 0 auto;
+     
+
+}
+
+.nav-like{
+    color: white;
+    text-decoration: none;
+
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0 45px;
+    line-height: 110px;
+}
+
+
+
+.nav-menu{
+    display: flex;
+    margin-right: 10px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 20px;
+    margin: 0 12px;
+    line-height: 110px ;
+    text-transform: uppercase;
+
+}
+
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+
+}
+
+.nav-menu-link:hover{
+    background-color:rgba(39, 8, 8, 0.39) ;
+    transition: 0.5s;
+
+}
+
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0 20px;
+    line-height: 80px;
+
+    display: none;
+
+}
+
+
+.facebook{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding:0 20px;
+    line-height: 80px;
+    
+}
+
+
+
+
+.Instagram{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0 20px;
+    line-height: 80px;
+}
+
+.whatsapp{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0 20px;
+    line-height: 80px;
+}
+
+.cart-shopping{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0 20px;
+    line-height: 80px; 
+}
+
+.Buscar{
+    font-size: 40px;
+    padding: 0 50px;
+    line-height: 80px; 
+
+}
+
+.Buscar input{
+    position: relative;
+    width: 100%;
+    padding: 10px 30px;
+    top: 15px;
+    border-radius: 5px;
+}
+
+
+
+
+
+.imagen_Fondo{
+    background-image: url(../Imagen/img2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+    
+
+}
+.texto{
+    background-color: rgba(200, 211, 211, 0.459);
+}
+
+.categoria{
+color: azure;
+font-size: 30px;
+text-indent: 2%;
+line-height: normal;
+text-decoration: none;
+
+
+}
+.categoria:hover{
+    background-color:rgba(39, 8, 8, 0.39) ;
+    transition: 0.5s;
+    display: block;
+
+}
+
+.Colección{
+    font-size: 150%;
+    font-weight:bold ;
+   font-family: sans-serif;
+   letter-spacing: 40px;
+   text-indent: 10%;
+    background-color: gray;
+    color: azure;
+    text-align: center;
+    left: 1px;
+    padding-top: 10px;
+    border: 2px solid black;
+}
+
+
+
+ul {
+    list-style-type: circle;
+}
+
+video{
+    width: 90%;
+    margin: auto;
+    display: block;
+    padding: 15px;
+    background-color: rgba(175, 190, 190, 0.295);
+    
+    
+}
+
+.Primer_imagen{
+    background-color: rgba(153, 98, 98, 0.158);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+.ropa1{
+    width: 30px;
+    height: auto;
+    background-color: rgba(165, 42, 42, 0.164);
+    float: left;
+    position: relative;
+    letter-spacing: 10cm;
+   
+    
+  
+}
+
+
+img{
+    width: 250px;
+    height: auto;
+    display: block;
+    margin-right: 60px;
+    border-radius: 10px;
+    padding: 60px;
+}
+
+.footer{
+    background-color: brown;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 0;
+   
+      
+}
+
+.grupo_1{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.red_social{
+    font-size: 20px;
+    margin: 0 12px;
+    line-height: 110px ;
+    text-transform: uppercase;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    body{
+        background-color: rgba(190, 133, 133, 0.493);
+        padding-top: 70px;
+
+    }
+
+    .logo{
+        font-size: 30px;
+        font-weight: bold;
+        padding: 0 35px;
+        line-height: 90px;
+    
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 30px;
+        background-color: gray;
+        position: fixed;
+        left: 0;
+        top: 80px;
+        width: 100%;
+
+        height: calc(100% - 80px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: 0,3s;
+
+    }
+    
+    .nav-menu-item{
+        line-height: 90px ;
+
+    }
+
+    .nav-menu-link:hover{
+        background:none ;
+        color:rgb(31, 27, 27)
+        
+    
+    }
+    .nav-toggle{
+        display: block;
+    
+    }
+
+    .nav-menu_visible{
+    left: 0;
+    }
+}

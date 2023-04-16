@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro</title>
+    <link rel="stylesheet" href="prueba.css"> 
+    <link rel="stylesheet" href="normalize.css">
+    <script src="prueba.js"></script>
+    <script src="https://kit.fontawesome.com/17552d8682.js" crossorigin="anonymous"></script>
+    
+
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="Project.html" class="logo nav-like">Emprende.com</a>  
+            <button class="nav-toggle" aria-label="abrir menu"> <i class="fa-solid fa-bars"> </i> </button>
+            <ul class="nav-menu nav-menu_visible">
+                <button class="cart-shopping"> <i class="fa-solid fa-cart-shopping"> </i> </button>
+                <li class="nav-menu-item"><a href="Project.html" class="nav-menu-link nav-like">Inicio</a></li>
+                <li class="nav-menu-item"><a href="formulario1.html" class="nav-menu-link nav-like">Cuenta</a></li>
+                <li class="nav-menu-item"><a href="Envio.html" class="nav-menu-link nav-like">Envio</a></li>
+                <li class="nav-menu-item"><a href="Contacto.html" class="nav-menu-link nav-like">Contacto</a></li>
+            </ul>
+            </nav> 
+            
+    </header>
+<main>
+    <form action="prueba.php" method="post" class="formulario" id="formulario" onsubmit="return validar ();">
+        <div class="formulario__grupo" id="grupo__Nombre">
+            <label for="Nombre" class="formulario__label">Nombre</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="Nombre" id="Nombre" placeholder="Nombre Completo">
+                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error"> Escribir</p>
+        </div>
+
+
+
+
+        <div class="formulario__grupo" id="grupo__Apellido">
+            <label for="Apellido" class="formulario__label">Apellido</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="Apellido" id="Apellido" placeholder="Apellido Completo">
+                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error"> Escribir</p>
+        </div>
+        
+    
+        <div class="formulario__grupo" id="grupo__Fecha_Nacimiento">
+            <label for="Fecha de Nacimiento" class="formulario__label">Fecha de Nacimiento</label>
+            <div class="formulario__grupo-input">
+                <input type="date" class="formulario__input" name="Fecha de Nacimiento" id="Fecha de Nacimiento" placeholder="Fecha de Nacimiento" required>
+                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error"> Escribir</p>
+        </div>
+
+        <div class="formulario__grupo" id="grupo__Direcciòn">
+            <label for="Dirección" class="formulario__label">Dirección</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="Dirección" id="Dirección" placeholder="Dirección">
+                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error"> Escribir</p>
+        </div>
+
+        <div class="formulario__grupo" id="grupo__Correo">
+            <label for="Correo" class="formulario__label">Correo</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="Correo" id="Correo" placeholder="Ejemplo@mail.com">
+                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error"> Escribir</p>
+        </div>
+
+        <div class="formulario__grupo" id="grupo__Telefono">
+            <label for="Teléfono" class="formulario__label">Teléfono</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="Teléfono" id="Teléfono" placeholder="Teléfono">
+                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error"> Escribir</p>
+        </div>
+        
+
+        <div class="formulario__grupo" id="grupo__Contraseña">
+            <label for="Contraseña" class="formulario__label">Contraseña</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="Contraseña" id="Contraseña" placeholder="Password">
+                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error"> Escribir</p>
+        </div>
+
+
+        <div class="formulario__grupo" id="grupo__RepetirContraseña">
+            <label for="RepetirContraseña" class="formulario__label">Confirmar Contraseña</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="RepetirContraseña" id="RepetirContraseña" placeholder="Password">
+                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error"> Escribir</p>
+        </div>
+        
+        
+
+        
+        
+    
+
+        
+
+        <div class="formulario__grupo-terminos" id="grupo__terminos">
+            <label for="Terminos_Condiciones"><input id="Terminos_Condiciones" type="checkbox" name="Terminos_Condiciones" required onkeyup="this.value=Numeros(this.value)"/>
+                <a href="Contacto.html" class="Terminos_Condiciones"> Acepto terminos y condiciones</a>
+            </label>
+        </div>
+
+
+
+        <div class="formulario__Mensaje" id="formulario__Mensaje">
+            <p> <i class="fa-solid fa-triangle-exclamation"></i> <b> Error </b> Diligenciar todos los campos </p>
+        </div>
+
+
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario__btn">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito"> <i class="fa-solid fa-check"></i> Formulario Exitoso  </p>
+        </div>
+
+
+    </form>
+</main>
+    
+</body>
+</html>

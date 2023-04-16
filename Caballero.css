@@ -1,0 +1,196 @@
+body{
+    background-color: white;
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+    overflow-y: scroll;
+    background-image: url(../Imagen/fondo.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+
+}
+
+.header{
+    background-color: brown;
+    height: 110px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+.nav{
+    position: sticky;
+     display: flex;
+     justify-content: space-between;
+
+     margin: 0 auto;
+     
+
+}
+
+.nav-like{
+    color: white;
+    text-decoration: none;
+
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0 45px;
+    line-height: 110px;
+}
+
+
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 20px;
+    margin: 0 12px;
+    line-height: 110px ;
+    text-transform: uppercase;
+
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+
+}
+
+.nav-menu-link:hover{
+    background-color:rgba(39, 8, 8, 0.39) ;
+    transition: 0.5s;
+
+}
+
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0 20px;
+    line-height: 80px;
+
+    display: none;
+
+}
+
+
+.facebook{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding:0 20px;
+    line-height: 80px;
+    
+}
+
+
+
+
+.Instagram{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0 20px;
+    line-height: 80px;
+}
+
+.whatsapp{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0 20px;
+    line-height: 80px;
+}
+
+.cart-shopping{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0 20px;
+    line-height: 80px;  
+}
+
+video{
+    width: 90%;
+    margin: auto;
+    display: block;
+    padding: 15px;
+    background-color: rgba(175, 190, 190, 0.295);  
+}
+
+.Primer_imagen{
+    background-color: rgba(153, 98, 98, 0.158);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+.ropa1{
+    width: 30px;
+    height: auto;
+    background-color: rgba(165, 42, 42, 0.164);
+    float: left;
+    position: relative;
+    letter-spacing: 10cm;
+    
+   
+    
+  
+}
+
+
+img{
+    background-color: rgba(0, 0, 0, 0.247);
+    width: 250px;
+    height: auto;
+    display: block;
+    margin-right: 60px;
+    border-radius: 10px;
+    padding: 5px 60px;
+    
+    
+}
+
+.Descripción{
+    padding: 0;
+    margin-right: 60px;
+    margin-bottom: 60px;
+    color: white;
+    font-size: medium;
+    font-family: sans-serif;
+    text-align: justify;
+    text-overflow:ellipsis;
+    text-transform: uppercase;
+    line-height: 10px;
+    text-indent: 10px;
+    border-radius: 10px;
+}
+
+.Buscar{
+    font-size: 40px;
+    padding: 0 50px;
+    line-height: 80px; 
+
+}
+
+.Buscar input{
+    position: relative;
+    width: 100%;
+    padding: 10px 30px;
+    top: 15px;
+    border-radius: 5px;
+}

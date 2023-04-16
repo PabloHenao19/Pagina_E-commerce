@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(187, 181, 181);
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+   background-image: url(../Imagen/img2.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+
+
+}
+.Registro{
+    width: 400px;
+    background: rgb(110, 48, 40);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+
+
+}
+
+.Registro h4{
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.Controls{
+    width: 100%;
+    background: rgb(196, 182, 186);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border:1px solid rgb(110, 40, 40);
+    font-family: 'calibri';
+    
+
+}
+
+.Registro p{
+height: 40px;
+text-align: center;
+font-size: 18px;
+line-height: 40px;
+
+}
+
+.Registro a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.Registro a:hover{
+background-color:rgba(240, 255, 255, 0.514);
+transition: 1s;
+text-decoration: underline;
+}
+
+.Registro .Botons{
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin:16px 0;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.Botons:hover{
+   background-color: cadetblue; 
+}
+

@@ -1,0 +1,290 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(187, 181, 181);
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+   background-image: url(../Imagen/img2.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.header{
+    background-color: brown;
+    height: 110px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+.nav{
+    position: sticky;
+     display: flex;
+     justify-content: space-between;
+
+     margin: 0 auto;
+     
+
+}
+
+.nav-like{
+    color: white;
+    text-decoration: none;
+
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0 45px;
+    line-height: 110px;
+}
+
+
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 20px;
+    margin: 0 12px;
+    line-height: 110px ;
+    text-transform: uppercase;
+
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+
+}
+
+.nav-menu-link:hover{
+    background-color:rgba(39, 8, 8, 0.39) ;
+    transition: 0.5s;
+
+}
+
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0 20px;
+    line-height: 80px;
+
+    display: none;
+
+}
+
+
+.facebook{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding:0 20px;
+    line-height: 80px;
+    
+}
+
+
+
+
+.Instagram{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0 20px;
+    line-height: 80px;
+}
+
+.whatsapp{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0 20px;
+    line-height: 80px;
+}
+
+.cart-shopping{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0 20px;
+    line-height: 80px;  
+}
+
+main{
+    width: 800px;
+    background: rgb(110, 48, 40);
+    padding: 30px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 5px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+}
+
+.formulario__label{
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.Terminos_Condiciones{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.Terminos_Condiciones:hover{
+    background-color: rgba(240, 255, 255, 0.514);
+    transition: 1s;
+    text-decoration: underline;
+}
+
+.formulario__grupo-input{
+    position: relative;
+
+}
+
+.formulario__input{
+    width: 100%;
+    background: white;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+
+.formulario__input:focus{
+    border: 3px solid #0075ff;
+    outline: none;
+    box-sizing: 3px 0 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formulario__input-error-activo{
+    display: block;
+}
+
+.formulario__validacion-estado{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formulario__grupo-terminos,
+.formulario__Mensaje,
+.formulario__grupo-btn-enviar{
+    grid-column: span 2;
+}
+
+.formulario__Mensaje{
+    height: 45px;
+    line-height: 45px;
+    background: #f66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+.formulario__Mensaje-activo{
+    display: block;
+}
+
+.formulario__Mensaje p {
+    margin: 0;
+}
+
+.formulario__grupo-btn-enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario__btn{
+    height: 45px;
+    line-height: 45px;
+    width: 50%;
+    background: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+.formulario__mensaje-exito{
+    font-size: 15px;
+    display: none;    
+}
+
+.formulario__mensaje-exito-activo{
+    display: block;
+}
+
+.formulario__grupo-correcto .formulario__validacion-estado{
+    color: #1ed12d;
+    opacity: 1;
+    
+}
+
+.formulario__grupo-incorrecto .formulario__label{
+    color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado{
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input{
+    border: 3px solid #bb2929;
+}
+
+
+
+@media screen and (max-width: 700px){
+    .formulario{
+        grid-template-columns: 1fr;
+    }
+    .formulario__grupo-terminos,
+    .formulario__Mensaje,
+    .formulario__grupo-btn-enviar{
+        grid-column: 1;
+    }
+    .formulario__btn{
+        width: 100%;
+    }
+}
