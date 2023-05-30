@@ -1,86 +1,337 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body{
     background-color: rgb(187, 181, 181);
     font-family: sans-serif;
     padding: 90px 20px 0;
-   background-image: url(../Imagen/img2.jpg);
+    overflow-y: scroll;
+    background-image: url(../Imagen/fondo.jpg);
    background-size: cover;
    background-attachment: fixed;
 
-
-}
-.Registro{
-    width: 400px;
-    background: rgb(110, 48, 40);
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 5px;
-    font-family: 'calibri';
-    color: white;
-    box-shadow: 7px 13px 37px #000;
-
-
 }
 
-.Registro h4{
-    font-size: 35px;
-    margin-bottom: 20px;
-    text-align: center;
-    
-}
-
-.Controls{
+.header{
+    background-color: black;
+    height: 110px;
+    position:fixed;
+    display: flex;
     width: 100%;
-    background: rgb(196, 182, 186);
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border:1px solid rgb(110, 40, 40);
-    font-family: 'calibri';
-    
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+}
+.nav{
+    position: sticky;
+     display: flex;
+     justify-content: space-between;
+
+     margin: 0 auto;
+     
 
 }
 
-.Registro p{
-height: 40px;
-text-align: center;
-font-size: 18px;
-line-height: 40px;
-
-}
-
-.Registro a{
+.nav-like{
     color: white;
     text-decoration: none;
-    cursor: pointer;
 
 }
 
-.Registro a:hover{
-background-color:rgba(240, 255, 255, 0.514);
-transition: 1s;
-text-decoration: underline;
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0 45px;
+    line-height: 110px;
 }
 
-.Registro .Botons{
-    width: 100%;
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
+
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 20px;
+    margin: 0 12px;
+    line-height: 110px ;
+    text-transform: uppercase;
+
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+
+}
+
+.nav-menu-link:hover{
+    background-color:rgba(39, 8, 8, 0.39) ;
+    transition: 0.5s;
+
+}
+
+.nav-toggle{
     color: white;
-    margin:16px 0;
-    font-size: 16px;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0 20px;
+    line-height: 80px;
+
+    display: none;
+
+}
+
+
+.facebook{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding:0 20px;
+    line-height: 80px;
+    
+}
+
+
+
+
+.Instagram{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0 20px;
+    line-height: 80px;
+}
+
+.whatsapp{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0 20px;
+    line-height: 80px;
+}
+
+
+video{
+    width: 90%;
+    margin: auto;
+    display: block;
+    padding: 15px;
+    background-color: rgba(175, 190, 190, 0.295);  
+}
+
+
+
+.cart-shopping {
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    right: 0;
+    color: white;
+    background: none;
+    border: none;
+    padding: 0 20px;
+    line-height: 80px;
+
+ }
+
+ .cart-shopping :hover{
+        cursor: pointer;
+        background-color:rgba(39, 8, 8, 0.39) ;
+        transition: 0.5s;
+        border-radius: 20%;
+        padding: 10px;
+    
+ }
+
+ .container-icon{
+    position: relative;
+    
+ }
+
+
+ .count-product{
+    position: absolute;
+    right: 0;
+    top: 2%;
+    right: 0;
+
+    background-color:white;
+    color: black;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+ }
+
+ .container-cart-product{
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+
+}
+
+.hidden-cart{
+    display: none;
+}
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+    color:black;
+
+}
+
+.icon-close:hover{
+    color: red;
     cursor: pointer;
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
 
 }
 
-.Botons:hover{
-   background-color: cadetblue; 
+.info-cart-product{
+display: flex;
+justify-content: space-between;
+flex: 0.8;
+}
+ 
+.titulo-producto-carrito{
+    font-size: 20px;
 }
 
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+
+
+.imagen{
+    max-width: 100%;
+}
+
+
+.container-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    z-index: 1;
+}
+
+.items{
+    border-radius: 10px;
+}
+
+.items:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+
+.items img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.items:hover img {
+    transform: scale(1.2);
+}
+
+.items figure{
+    overflow: hidden;
+}
+
+.info-product {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .info-product h2,
+  .info-product p {
+    margin: 0;
+    line-height: 1.2; /* Ajusta el valor según tus preferencias */
+  }
+  
+  .info-product h2 {
+    margin-bottom: 5px; /* Ajusta el valor según tus preferencias */
+  }
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.info-product button{
+    border-radius: 20px;
+    background-color: #1f1515;
+    color: #fff;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+
+.Buscar{
+    font-size: 40px;
+    padding: 0 50px;
+    line-height: 80px; 
+
+}
+
+.Buscar input{
+    position: relative;
+    width: 100%;
+    padding: 10px 30px;
+    top: 15px;
+    border-radius: 5px;
+}
