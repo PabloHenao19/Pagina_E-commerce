@@ -16,7 +16,7 @@ body{
 }
 .Registro{
     width: 400px;
-    background: rgb(110, 48, 40);
+    background: black;
     padding: 30px;
     margin: auto;
     margin-top: 100px;
@@ -31,7 +31,7 @@ body{
 .Registro h4{
     font-size: 35px;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: center; 
     
 }
 
@@ -41,7 +41,7 @@ body{
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border:1px solid rgb(110, 40, 40);
+    border:1px solid black;
     font-family: 'calibri';
     
 
